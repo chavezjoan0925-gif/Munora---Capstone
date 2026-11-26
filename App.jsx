@@ -1,26 +1,26 @@
 import React, { useState, useMemo } from "react";
-import { PHILIPPINE_CITIES } from "./data/philippineCities";
-import { getCityWeatherData } from "./data/weatherEngine";
-import DynamicBackground from "./components/DynamicBackground";
-import MobileStatusBar from "./components/mobile/MobileStatusBar";
-import MobileAppHeader from "./components/mobile/MobileAppHeader";
-import MobileBottomNav from "./components/mobile/MobileBottomNav";
-import MobileCityModal from "./components/mobile/MobileCityModal";
-import MobileHeatTab from "./components/mobile/MobileHeatTab";
-import MobileAlertsTab from "./components/mobile/MobileAlertsTab";
-import MobileCitiesTab from "./components/mobile/MobileCitiesTab";
-import MobileDeviceFrame from "./components/mobile/MobileDeviceFrame";
+import { PHILIPPINE_CITIES } from "./philippineCities.js";
+import { getCityWeatherData } from "./weatherEngine.js";
+import DynamicBackground from "./DynamicBackground.jsx";
+import MobileStatusBar from "./MobileStatusBar.jsx";
+import MobileAppHeader from "./MobileAppHeader.jsx";
+import MobileBottomNav from "./MobileBottomNav.jsx";
+import MobileCityModal from "./MobileCityModal.jsx";
+import MobileHeatTab from "./MobileHeatTab.jsx";
+import MobileAlertsTab from "./MobileAlertsTab.jsx";
+import MobileCitiesTab from "./MobileCitiesTab.jsx";
+import MobileDeviceFrame from "./MobileDeviceFrame.jsx";
 
 // Main Weather & Bento Components
-import CurrentConditionHero from "./components/CurrentConditionHero";
-import MetricsGrid from "./components/MetricsGrid";
-import AdviceForTodayCard from "./components/AdviceForTodayCard";
-import HeatCheckCard from "./components/HeatCheckCard";
-import ActivityPlannerCard from "./components/ActivityPlannerCard";
-import HourlyForecastBar from "./components/HourlyForecastBar";
-import DailyForecastCard from "./components/DailyForecastCard";
-import SevereAdvisoryBanner from "./components/SevereAdvisoryBanner";
-import WeatherChatbotAssistant from "./components/WeatherChatbotAssistant";
+import CurrentConditionHero from "./CurrentConditionHero.jsx";
+import MetricsGrid from "./MetricsGrid.jsx";
+import AdviceForTodayCard from "./AdviceForTodayCard.jsx";
+import HeatCheckCard from "./HeatCheckCard.jsx";
+import ActivityPlannerCard from "./ActivityPlannerCard.jsx";
+import HourlyForecastBar from "./HourlyForecastBar.jsx";
+import DailyForecastCard from "./DailyForecastCard.jsx";
+import SevereAdvisoryBanner from "./SevereAdvisoryBanner.jsx";
+import WeatherChatbotAssistant from "./WeatherChatbotAssistant.jsx";
 
 export default function App() {
   // Start with Muntinlupa City (highlighted in prompt)
